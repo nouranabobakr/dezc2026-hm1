@@ -1,0 +1,4 @@
+SELECT COUNT(*) 
+FROM green_trips_data a
+WHERE a.lpep_pickup_datetime BETWEEN '2025-11-01 00:00:00' AND '2025-11-30 23:59:59'
+  AND a.trip_distance <= 1;
